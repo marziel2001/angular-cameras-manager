@@ -1,0 +1,36 @@
+<article class="text--justified">
+  <header><h2>Characters</h2></header>
+
+  <h2>Brands:</h2>
+
+  <table *ngIf="brands">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>id</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let brand of brands.brands">
+      <td>
+        {{brand.name}}
+      </td>
+      <td>
+        {{brand.id}}
+      </td>
+      <td>
+        <a>View</a>
+      </td>
+      <td>
+        <a>Edit</a>
+      </td>
+      <td>
+        <button (click)="onDelete(brand)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</article>
