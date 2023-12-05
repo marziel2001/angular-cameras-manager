@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lab5Angular';
+
+  styleexpression: string = "" +
+      "color: red;" +
+      "width: 80%;" +
+      ""
 }

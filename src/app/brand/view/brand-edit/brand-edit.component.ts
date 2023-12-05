@@ -41,8 +41,6 @@ export class BrandEditComponent implements OnInit {
     }
 
     onSubmit(): void {
-        console.log("uuid: ", this.uuid);
-
         this.brandService.patchBrand(this.uuid!, this.brand!)
             .subscribe(() => this.router.navigate(['/brands']));
     }

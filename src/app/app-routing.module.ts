@@ -3,8 +3,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {BrandListComponent} from "./brand/view/brand-list/brand-list.component";
 import {BrandViewComponent} from "./brand/view/brand-view/brand-view.component";
 import {BrandEditComponent} from "./brand/view/brand-edit/brand-edit.component";
-// import {BrandAddComponent} from "./brand/view/brand-add/brand-add.component";
-
+import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.component";
 
 const routes: Routes = [
   {
@@ -18,13 +17,11 @@ const routes: Routes = [
   {
     component: BrandEditComponent,
     path: "brands/:uuid/edit"
+  },
+  {
+    component: BrandCreateComponent,
+    path: "brands-create"
   }
-
-  // },
-  // {
-  //   component: BrandAddComponent,
-  //   path: "brands/add"
-  // }
 ];
 @NgModule({
   declarations: [],

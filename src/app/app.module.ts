@@ -11,11 +11,10 @@ import {RouterOutlet} from "@angular/router";
 import { BrandListComponent } from './brand/view/brand-list/brand-list.component';
 import {BrandService} from "./brand/service/brand.service";
 import {HttpClientModule} from "@angular/common/http";
-// import { BrandAddComponent } from './brand/view/brand-add/brand-add.component';
 import {FormsModule} from "@angular/forms";
 import { BrandViewComponent } from './brand/view/brand-view/brand-view.component';
 import { BrandEditComponent } from './brand/view/brand-edit/brand-edit.component';
-
+import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +24,8 @@ import { BrandEditComponent } from './brand/view/brand-edit/brand-edit.component
     HeaderComponent,
     BrandListComponent,
     BrandViewComponent,
-    BrandEditComponent
-    // BrandAddComponent
+    BrandEditComponent,
+    BrandCreateComponent
   ],
     imports: [
         BrowserModule,
