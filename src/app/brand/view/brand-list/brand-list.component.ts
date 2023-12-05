@@ -22,8 +22,4 @@ export class BrandListComponent implements OnInit {
   onDelete(brand: Brand): void {
     this.service.deleteBrand(brand.id).subscribe(() => this.ngOnInit());
   }
-  // onAdd(): void {
-  //   this.service.putBrand().subscribe(() => this.ngOnInit());
-  // }
-
 }

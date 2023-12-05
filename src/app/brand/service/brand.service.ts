@@ -27,4 +27,9 @@ export class BrandService {
   putBrand(uuid: string, request: BrandForm): Observable<any> {
     return this.http.put('/api/brands/' + uuid, request);
   }
+
+  patchBrand(uuid: string, request: BrandForm): Observable<any> {
+    return this.http.patch('/api/brands/' + uuid, request);
+  }
+
 }

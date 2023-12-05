@@ -14,6 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
 // import { BrandAddComponent } from './brand/view/brand-add/brand-add.component';
 import {FormsModule} from "@angular/forms";
 import { BrandViewComponent } from './brand/view/brand-view/brand-view.component';
+import { BrandEditComponent } from './brand/view/brand-edit/brand-edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrandViewComponent } from './brand/view/brand-view/brand-view.component
     NavComponent,
     HeaderComponent,
     BrandListComponent,
-    BrandViewComponent
+    BrandViewComponent,
+    BrandEditComponent
     // BrandAddComponent
   ],
     imports: [
