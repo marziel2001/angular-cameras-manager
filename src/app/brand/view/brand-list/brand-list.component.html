@@ -3,6 +3,10 @@
 
   <h2>Brands:</h2>
 
+  <!--  <p>-->
+  <!--    <a [routerLink]="['/brands/add']">Add new brand</a>-->
+  <!--  </p>-->
+
   <table *ngIf="brands">
     <thead>
     <tr>
@@ -22,10 +26,10 @@
         {{brand.id}}
       </td>
       <td>
-        <a>View</a>
+        <a [routerLink]="['/brands', brand.id]">View</a>
       </td>
       <td>
-        <a>Edit</a>
+<!--        <a [routerLink]="['/brands', brand.id, 'edit']">Edit</a>-->
       </td>
       <td>
         <button (click)="onDelete(brand)">Delete</button>

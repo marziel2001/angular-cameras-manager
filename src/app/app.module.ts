@@ -11,6 +11,9 @@ import {RouterOutlet} from "@angular/router";
 import { BrandListComponent } from './brand/view/brand-list/brand-list.component';
 import {BrandService} from "./brand/service/brand.service";
 import {HttpClientModule} from "@angular/common/http";
+// import { BrandAddComponent } from './brand/view/brand-add/brand-add.component';
+import {FormsModule} from "@angular/forms";
+import { BrandViewComponent } from './brand/view/brand-view/brand-view.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,17 @@ import {HttpClientModule} from "@angular/common/http";
     FooterComponent,
     NavComponent,
     HeaderComponent,
-    BrandListComponent
+    BrandListComponent,
+    BrandViewComponent
+    // BrandAddComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterOutlet,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        RouterOutlet,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [
     BrandService
   ],

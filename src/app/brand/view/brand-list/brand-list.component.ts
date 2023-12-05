@@ -17,11 +17,13 @@ export class BrandListComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getBrands().subscribe(brands => this.brands = brands);
-    console.log(this.brands);
   }
 
   onDelete(brand: Brand): void {
     this.service.deleteBrand(brand.id).subscribe(() => this.ngOnInit());
   }
+  // onAdd(): void {
+  //   this.service.putBrand().subscribe(() => this.ngOnInit());
+  // }
 
 }
