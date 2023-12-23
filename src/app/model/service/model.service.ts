@@ -14,33 +14,9 @@ export class ModelService {
   getBrandsModels(brandId: string): Observable<Models> {
     return this.http.get<Models>('/api/brands/'+brandId+'/models');
   }
-}
 
-// @Injectable()
-// export class BrandService {
-//
-//   constructor(private http: HttpClient) {
-//
-//   }
-//
-//   getBrands(): Observable<Brands> {
-//     return this.http.get<Brands>('/api/brands');
-//   }
-//
-//   getBrand(uuid: string): Observable<BrandDetails> {
-//     return this.http.get<BrandDetails>('/api/brands/' + uuid);
-//   }
-//
-//   deleteBrand(uuid: string): Observable<any> {
-//     return this.http.delete('/api/brands/' + uuid);
-//   }
-//
-//   putBrand( request: BrandForm): Observable<any> {
-//     return this.http.put('/api/brands', request);
-//   }
-//
-//   patchBrand(uuid: string, request: BrandForm): Observable<any> {
-//     return this.http.patch('/api/brands/' + uuid, request);
-//   }
-//
-// }
+  deleteModel(modelId: string): Observable<any> {
+    return this.http.delete('/api/models/' + modelId);
+
+  }
+}

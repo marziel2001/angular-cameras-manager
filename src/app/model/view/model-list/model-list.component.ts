@@ -3,6 +3,8 @@ import {ModelService} from "../../service/model.service";
 import {Models} from "../../model/models";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AppComponent} from "../../../app.component";
+import {Brand} from "../../../brand/model/brand";
+import {Model} from "../../model/model";
 
 @Component({
   selector: 'app-model-list',
@@ -25,5 +27,9 @@ export class ModelListComponent {
     })
     }
 
-    protected readonly AppComponent = AppComponent;
+  onDelete(model: Model): void {
+    this.service.deleteModel(model.id).subscribe(() => this.ngOnInit());
+  }
+
+
 }
