@@ -17,6 +17,7 @@ import { BrandEditComponent } from './brand/view/brand-edit/brand-edit.component
 import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.component";
 import { ModelListComponent } from './model/view/model-list/model-list.component';
 import {ModelService} from "./model/service/model.service";
+import { ModelViewComponent } from './model/view/model-view/model-view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import {ModelService} from "./model/service/model.service";
     BrandViewComponent,
     BrandEditComponent,
     BrandCreateComponent,
-    ModelListComponent
+    ModelListComponent,
+    ModelViewComponent
   ],
     imports: [
         BrowserModule,

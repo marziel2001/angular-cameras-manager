@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Models} from "../model/models";
+import {BrandDetails} from "../../brand/model/brand-details";
+import {ModelDetails} from "../model/model-details";
 @Injectable({
   providedIn: 'root'
 })
@@ -19,4 +21,9 @@ export class ModelService {
     return this.http.delete('/api/models/' + modelId);
 
   }
+
+  getModel(uuid: string): Observable<ModelDetails> {
+    return this.http.get<ModelDetails>('/api/models/' + uuid);
+  }
+
 }

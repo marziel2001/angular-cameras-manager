@@ -10,6 +10,7 @@
     <tr>
       <th>Name</th>
       <th>Id</th>
+      <th>View</th>
       <th>Delete</th>
     </tr>
     </thead>
@@ -21,11 +22,11 @@
       <td>
         {{model.id}}
       </td>
+      <td>
+        <a [routerLink]="['/models', model.id]">View</a>
+      </td>
 <!--      <td>-->
-<!--        <a [routerLink]="['/brands', brand.id]">View</a>-->
-<!--      </td>-->
-<!--      <td>-->
-<!--        <a [routerLink]="['/brands', brand.id, 'edit']">Edit</a>-->
+<!--        <a [routerLink]="['/models', model.id, 'edit']">Edit</a>-->
 <!--      </td>-->
       <td>
         <button (click)="onDelete(model)">Delete</button>

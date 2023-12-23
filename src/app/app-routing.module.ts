@@ -5,6 +5,7 @@ import {BrandViewComponent} from "./brand/view/brand-view/brand-view.component";
 import {BrandEditComponent} from "./brand/view/brand-edit/brand-edit.component";
 import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.component";
 import {ModelListComponent} from "./model/view/model-list/model-list.component";
+import {ModelViewComponent} from "./model/view/model-view/model-view.component";
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     component: ModelListComponent,
     path: "brands/:uuid/models"
+  },
+  {
+    component: ModelViewComponent,
+    path: "models/:uuid"
   }
 ];
 @NgModule({
