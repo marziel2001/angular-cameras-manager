@@ -15,6 +15,8 @@ import {FormsModule} from "@angular/forms";
 import { BrandViewComponent } from './brand/view/brand-view/brand-view.component';
 import { BrandEditComponent } from './brand/view/brand-edit/brand-edit.component';
 import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.component";
+import { ModelListComponent } from './model/view/model-list/model-list.component';
+import {ModelService} from "./model/service/model.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.compo
     BrandListComponent,
     BrandViewComponent,
     BrandEditComponent,
-    BrandCreateComponent
+    BrandCreateComponent,
+    ModelListComponent
   ],
     imports: [
         BrowserModule,
@@ -35,7 +38,8 @@ import {BrandCreateComponent} from "./brand/view/brand-create/brand-create.compo
         FormsModule
     ],
   providers: [
-    BrandService
+    BrandService,
+    ModelService
   ],
   bootstrap: [AppComponent]
 })

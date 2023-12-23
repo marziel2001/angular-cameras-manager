@@ -1,6 +1,6 @@
 export interface BrandDetails {
 
-  id: string;
+  uuid: string;
 
   name: string;
 

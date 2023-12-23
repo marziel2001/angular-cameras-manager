@@ -1,0 +1,35 @@
+<article class="text--justified">
+  <header><h2>Models:</h2></header>
+
+  <p>
+<!--    <a [routerLink]="['/brands-create']">Add new brand</a>-->
+  </p>
+
+  <table *ngIf="models">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>id</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let model of models.models">
+      <td>
+        {{model.name}}
+      </td>
+      <td>
+        {{model.id}}
+      </td>
+<!--      <td>-->
+<!--        <a [routerLink]="['/brands', brand.id]">View</a>-->
+<!--      </td>-->
+<!--      <td>-->
+<!--        <a [routerLink]="['/brands', brand.id, 'edit']">Edit</a>-->
+<!--      </td>-->
+<!--      <td>-->
+<!--        <button (click)="onDelete(brand)">Delete</button>-->
+<!--      </td>-->
+    </tr>
+    </tbody>
+  </table>
+</article>
