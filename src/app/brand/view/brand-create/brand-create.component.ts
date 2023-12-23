@@ -11,7 +11,7 @@ import {BrandForm} from "../../model/brand-form";
 export class BrandCreateComponent implements OnInit {
 
     brand: BrandForm = {
-        id: '',
+        // id: '',
         name: '',
         yearOfEst: 0,
         country: '',

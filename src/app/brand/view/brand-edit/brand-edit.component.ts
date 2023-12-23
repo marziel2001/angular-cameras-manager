@@ -29,7 +29,7 @@ export class BrandEditComponent implements OnInit {
                 .subscribe(brand => {
                     this.uuid = params['uuid']
                     this.brand = {
-                        id: params['uuid'],
+                        // id: params['uuid'],
                         name: brand.name,
                         yearOfEst: brand.yearOfEst,
                         country: brand.country,

@@ -4,6 +4,8 @@ import {Observable} from "rxjs";
 import {Models} from "../model/models";
 import {BrandDetails} from "../../brand/model/brand-details";
 import {ModelDetails} from "../model/model-details";
+import {BrandForm} from "../../brand/model/brand-form";
+import {ModelForm} from "../model/model-form";
 @Injectable({
   providedIn: 'root'
 })
@@ -24,6 +26,14 @@ export class ModelService {
 
   getModel(uuid: string): Observable<ModelDetails> {
     return this.http.get<ModelDetails>('/api/models/' + uuid);
+  }
+
+  putModel( request: ModelForm): Observable<any> {
+    return this.http.put('/api/models', request);
+  }
+
+  patchModel(uuid: string, request: ModelForm): Observable<any> {
+    return this.http.patch('/api/models/' + uuid, request);
   }
 
 }
