@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {ModelService} from "../../service/model.service";
 import {Models} from "../../model/models";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -7,7 +7,7 @@ import {AppComponent} from "../../../app.component";
 @Component({
   selector: 'app-model-list',
   templateUrl: './model-list.component.html',
-  styleUrls: ['./model-list.component.css']
+  styleUrls: ['./model-list.component.css', '../../../tables.css']
 })
 export class ModelListComponent {
 

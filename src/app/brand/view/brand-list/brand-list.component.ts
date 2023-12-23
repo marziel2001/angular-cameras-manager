@@ -6,7 +6,7 @@ import {Brand} from "../../model/brand";
 @Component({
   selector: 'app-brand-list',
   templateUrl: './brand-list.component.html',
-  styleUrls: ['./brand-list.component.css']
+  styleUrls: ['./brand-list.component.css', '../../../tables.css']
 })
 export class BrandListComponent implements OnInit {
 

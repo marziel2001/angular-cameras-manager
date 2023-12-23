@@ -6,7 +6,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 @Component({
   selector: 'app-brand-edit',
   templateUrl: './brand-edit.component.html',
-  styleUrls: ['./brand-edit.component.css']
+  styleUrls: ['./brand-edit.component.css', '../../../forms.css']
 })
 export class BrandEditComponent implements OnInit {
 

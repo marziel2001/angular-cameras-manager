@@ -6,7 +6,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 @Component({
   selector: 'app-brand-view',
   templateUrl: './brand-view.component.html',
-  styleUrls: ['./brand-view.component.css']
+  styleUrls: ['./brand-view.component.css', '../../../tables.css']
 })
 export class BrandViewComponent implements OnInit {
 

@@ -6,7 +6,7 @@ import {BrandForm} from "../../model/brand-form";
 @Component({
   selector: 'app-brand-create',
   templateUrl: './brand-create.component.html',
-  styleUrls: ['./brand-create.component.css']
+  styleUrls: ['./brand-create.component.css', '../../../forms.css']
 })
 export class BrandCreateComponent implements OnInit {
 
