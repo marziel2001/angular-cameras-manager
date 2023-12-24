@@ -29,7 +29,6 @@ export class ModelCreateComponent implements OnInit {
   onSubmit(): void {
     this.route.params.subscribe(params => {
       this.model.brand = params['brandsUuid'];
-      console.log(this.model);
 
       this.modelService.putModel(this.model!)
           .subscribe(() => this.router.navigate(['/brands/'+params['brandsUuid']]))

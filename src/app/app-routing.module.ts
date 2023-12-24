@@ -40,7 +40,7 @@ const routes: Routes = [
   },
   {
     component: ModelEditComponent,
-    path: "models-edit"
+    path: "brands/:brandsUuid/models/:modelsUuid/edit"
   }
 ];
 @NgModule({

@@ -20,10 +20,13 @@ export class ModelListComponent {
   }
 
   models: Models | undefined;
+
+  brandsUuid: string | undefined;
   ngOnInit(): void {
     this.route.params.subscribe(params => {
         this.service.getBrandsModels(params['uuid'])
             .subscribe(models => this.models = models);
+        this.brandsUuid = params['uuid'];
     })
     }
 

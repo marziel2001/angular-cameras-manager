@@ -8,4 +8,5 @@ export interface ModelDetails {
 
     announceYear: number;
 
+    brand: string;
 }
