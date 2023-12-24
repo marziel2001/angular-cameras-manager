@@ -70,16 +70,6 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Styl dla przycisków */
-button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
 
 button:hover {
     background-color: #0056b3;

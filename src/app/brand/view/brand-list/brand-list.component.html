@@ -2,14 +2,14 @@
   <header><h2>Brands:</h2></header>
 
   <p>
-    <a [routerLink]="['/brands-create']">Add new brand</a>
+    <a alt="Add new brand" [classList]="'rainbow-button'" [routerLink]="['/brands-create']"></a>
   </p>
 
   <table *ngIf="brands">
     <thead>
     <tr>
       <th>Name</th>
-      <th>id</th>
+<!--      <th>id</th>-->
       <th>View</th>
       <th>Edit</th>
       <th>Delete</th>
@@ -21,16 +21,13 @@
         {{brand.name}}
       </td>
       <td>
-        {{brand.id}}
-      </td>
-      <td>
         <a [routerLink]="['/brands', brand.id]">View</a>
       </td>
       <td>
         <a [routerLink]="['/brands', brand.id, 'edit']">Edit</a>
       </td>
       <td>
-        <button (click)="onDelete(brand)">Delete</button>
+        <button [classList]="'blueButton'" (click)="onDelete(brand)">Delete</button>
       </td>
     </tr>
     </tbody>

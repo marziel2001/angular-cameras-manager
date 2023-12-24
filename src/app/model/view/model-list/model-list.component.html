@@ -1,15 +1,11 @@
 <article class="text--justified">
   <header><h2>Models:</h2></header>
 
-  <p>
-<!--    <a [routerLink]="['/brands-create']">Add new brand</a>-->
-  </p>
-
   <table *ngIf="models">
     <thead>
     <tr>
       <th>Name</th>
-      <th>Id</th>
+<!--      <th>Id</th>-->
       <th>View</th>
       <th>Edit</th>
       <th>Delete</th>
@@ -20,9 +16,9 @@
       <td>
         {{model.name}}
       </td>
-      <td>
-        {{model.id}}
-      </td>
+<!--      <td>-->
+<!--        {{model.id}}-->
+<!--      </td>-->
       <td>
         <a [routerLink]="['/models', model.id]">View</a>
       </td>
@@ -30,7 +26,7 @@
         <a [routerLink]="['/brands', brandsUuid, 'models', model.id, 'edit']">Edit</a>
       </td>
       <td>
-        <button (click)="onDelete(model)">Delete</button>
+        <button [classList]="'blueButton'" (click)="onDelete(model)">Delete</button>
       </td>
     </tr>
     </tbody>

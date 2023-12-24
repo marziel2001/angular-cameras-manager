@@ -6,15 +6,6 @@
             <div class="col-4">
                 <div class="row mb-2">
                     <div class="col-6">
-                        id
-                    </div>
-                    <div class="col-6">
-                        <span>{{brand.uuid}}</span>
-                    </div>
-                </div>
-
-                <div class="row mb-2">
-                    <div class="col-6">
                         year of establishment
                     </div>
                     <div class="col-6">
@@ -42,7 +33,7 @@
             </div>
         </div>
         <p>
-            <a [routerLink]="['/models-create', brand.uuid]">Add new model</a>
+            <a alt="Add new model" [classList]="'rainbow-button'" [routerLink]="['/models-create', brand.uuid]"></a>
         </p>
         <app-model-list></app-model-list>
     </div>
